@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@font-face
+{
+font-family: Gameboy;
+src: url('Early GameBoy.ttf'),
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Gameboy;
+
+}
+
+h2 {
+    font-family: Gameboy;
+    font-size: 50px;
+}
+
+#calculator {
+    margin-top: 60px;
+    width: 300px;
+    height: 400px;
+    background-color: #727D71;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.screen {
+    width: 100%;
+    height: 15%;
+    background-color: #DCC9B6;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.clear {
+    background-color: #ABC4AB;
+}
+
+.mathButton, .clear {
+    padding: 15px;
+    width: 70px;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+}
+
