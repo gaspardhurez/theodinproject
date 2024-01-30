@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: #EAEFB1;
+    font-family: "Gentium Book Plus";
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F7D488;
+}
+
+.newBook {
+    align-self: flex-end;
+    margin-right: 3%;
+}
+
+    .newBook button {
+        padding: 16px;
+        border: 5px double black;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+        background-color: white;
+        font-size: 1.2rem;
+        font-weight: 700; 
+    }
+
+.books {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 80px;
+    border-radius: 8px;
+}
+
+    .book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22%;
+        padding: 12px 8px;
+        border-radius: 8px;
+        background-color: #F7D488;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+        .book-buttons {
+            align-self: flex-end;
+            display: flex;
+            gap: 2px;
+            color: grey;
+        }
+
+        .book-buttons span {
+            font-size: 1.6rem;
+        }
+
+        .book-buttons span:hover {
+            color: black;
+        }
+
+        .book-buttons span:first-child {
+            margin-top: 1px;
+        }
+
+        .book p {
+            padding: 0px 50px;
+        }
+
+    .whitespace {
+        width: 1%;
+        margin-right: 3%;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        background-color: white;
+    }
+
+.shelf {
+    width: 80vw;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #BB6304;
+}
+
+.newBookOverlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+    .newBookForm {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        background-color: #F7D488;
+        font-size: 1.2rem;
+    }
+
+        .newBookForm > button {
+            align-self: flex-end;
+            padding: 0;
+            margin-top: 4px;
+            margin-right: 4px;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+
+            .newBookForm button span {
+                font-size: 1.5rem;
+            }
+
+        form {  
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 80px;
+            text-align: center;
+            
+        }
+
+            input {
+                padding: 4px 16px;
+                border: none;
+            }
+
+            form button {
+                padding: 8px;
+                margin-top: 20px;
+                border: 4px double black;
+                background-color: white;
+                font-size: 1.4rem;
+            }
+
+            form #read {
+                padding: 32px;
+            }
+
+    
