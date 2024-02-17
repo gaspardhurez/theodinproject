@@ -1,0 +1,17 @@
+.gameboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.board-row {
+    display: flex;
+}
+
+button {
+    height: 150px;
+    width: 150px;
+    font-size: 3rem;
+    color: black;
+}
